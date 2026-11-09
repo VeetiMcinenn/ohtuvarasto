@@ -1,6 +1,6 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo=0):
-        self.tilavuus = tilavuus if tilavuus > 0.0 else 0.0  # virheellinen nollataan
+        self.tilavuus = tilavuus if tilavuus > 0.0 else 0.0
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
@@ -29,7 +29,7 @@ class Varasto:
             return 0.0
         if maara > self.saldo:
             kaikki_mita_voidaan = self.saldo
-            self.saldo = 0.0 #adding this comment to see if pylint breaks if the line length is too long now we shall see what happens
+            self.saldo = 0.0
 
             return kaikki_mita_voidaan
 
