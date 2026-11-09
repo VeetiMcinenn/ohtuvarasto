@@ -29,7 +29,7 @@ class Varasto:
             return 0.0
         if maara > self.saldo:
             kaikki_mita_voidaan = self.saldo
-            self.saldo = 0.0
+            self.saldo = 0.0 #adding this comment to see if pylint breaks if the line length is too long now we shall see what happens
 
             return kaikki_mita_voidaan
 
