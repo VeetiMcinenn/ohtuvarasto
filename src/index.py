@@ -8,7 +8,10 @@ def main():
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
-
+    if olutta:
+        if mehua:
+            if olutta:
+                print("Hello world")
 
 
 if __name__ == "__main__":
